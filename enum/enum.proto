@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package enum;
+
+option go_package = "github.com/harkli/b2c-internationalization-api/enum";
+
+enum Country {// 枚举 国家
+    NONE = 0;// 占位符，无意义
+    MY = 1;// my
+    ID = 2;// id
+    TH = 3;// th
+}

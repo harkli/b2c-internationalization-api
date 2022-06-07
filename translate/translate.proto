@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package translate;
+
+option go_package = "github.com/harkli/b2c-internationalization-api/translate";
+
+service Translate {
+    rpc Translate(TranslateIn) returns (TranslateOut);
+}
+
+message TranslateIn {
+    map<string, string> translateParams = 1;
+    int32 country = 2; 
+}
+
+message TranslateOut {
+    map<string, string> translateResult = 1;
+}
