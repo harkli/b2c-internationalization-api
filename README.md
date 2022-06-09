@@ -1,1 +1,1 @@
-# b2c-warehouse-api
+# b2c-internationalization-api
