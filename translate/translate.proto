@@ -9,7 +9,7 @@ service Translate {
 }
 
 message TranslateIn {
-    map<string, string> translateParams = 1;
+    repeated string translateParams = 1;
     int32 country = 2; 
 }
 
